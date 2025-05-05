@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    
+            <div class="lg:col-span-2">
+                <h1 class="text-3xl font-bold mb-6">Desserts</h1>
+                <div id="dessertGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-lg p-6 sticky top-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold">Your Cart</h2>
+                        <span id="cartCount" class="bg-orange-500 text-white px-2 py-1 rounded-full">(0)</span>
+                    </div>
+                    <div id="cartItems" class="space-y-4 mb-4">
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="font-semibold">Order Total</span>
+                            <span id="orderTotal" class="font-bold">$0.00</span>
+                        </div>
+                        <div class="flex items-center justify-center text-sm text-gray-600 mb-4">
+                            <i class="fas fa-leaf text-green-500 mr-2"></i>
+                            <span>This is a carbon-neutral delivery</span>
+                        </div>
+                        <button id="confirmOrder" class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                            Confirm Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
